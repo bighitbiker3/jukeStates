@@ -9,3 +9,23 @@ juke.config(function($stateProvider){
     controller: 'AlbumsCtrl'
   })
 })
+
+juke.config(function($stateProvider){
+	$stateProvider.state('allArtists',{
+		url: '/artists',
+		templateUrl: 'js/templates/artistsTemplate.html',
+		controller: 'ArtistsCtrl'
+	})
+})
+
+juke.config(function($stateProvider){
+	$stateProvider.state('currentArtist',{
+		url: '/artists/:id',
+		templateUrl: 'js/templates/artistTemplate.html',
+		controller: 'ArtistCtrl'
+	})
+})
+
+juke.config(function($stateProvider){
+	$stateProvider.state('currentAlbum')ß
+})
